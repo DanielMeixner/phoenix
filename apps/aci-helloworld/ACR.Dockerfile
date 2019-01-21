@@ -11,7 +11,7 @@ COPY ${basedir}/package*.json ./
 RUN npm install --production --silent
 
 # NPM is done, now copy in the the whole project to the workdir
-COPY ${basedir}/ ./
+COPY apps/aci-helloworld/app/ ./
 
 EXPOSE 80
 ENTRYPOINT [ "npm" , "start" ]
