@@ -14,4 +14,4 @@ RUN npm install --production --silent
 COPY ${basedir} ./
 
 EXPOSE 80
-CMD node /usr/src/app/index.js
+CMD node index.js
