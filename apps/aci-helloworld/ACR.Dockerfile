@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM dmxacrmaster-microsoft.azurecr.io/baseimages/node:8.2.0-alpine
 ARG basedir="apps/aci-helloworld/app"
 ARG build_info="Docker container build"
 ENV NODE_ENV production
